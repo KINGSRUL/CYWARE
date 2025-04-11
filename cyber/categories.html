@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/c.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xxjapp/xdialog@3/xdialog.min.css">
+   <script src="https://cdn.jsdelivr.net/gh/xxjapp/xdialog@3/xdialog.min.js"></script>
+   <style>
+
+        body {
+            background-color: #333;
+            color: #fefefe;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 30px 0;
+            text-align: center;
+            background-color: #222;
+            margin: 20px 0;
+        }
+        .section h2 {
+            color: #00aaff;
+        }
+        .section p {
+            color: #fcfafa;
+        }
+        .section-icon {
+            font-size: 40px;
+            color: #00aaff;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #111;
+            padding: 40px 0;
+            color: #aaa;
+        }
+        footer h5 {
+            color: #00aaff;
+            margin-bottom: 20px;
+        }
+        .widget {
+            margin-bottom: 20px;
+        }
+        .link-list li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        .link-list a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        .link-list a:hover {
+            color: #00aaff;
+        }
+        .social-network a {
+            color: #aaa;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .social-network a:hover {
+            color: #00aaff;
+        }
+        #sub-footer {
+            padding: 20px 0;
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+        $("a").click(function(event) {
+           var data_file =event.target.getAttribute("data-file");
+           var logfile;
+            $.get(data_file, function(response) {
+            logfile = response;
+            var d1 = xdialog.create({title: event.target.innerHTML,body: logfile});
+            d1.show();
+            });
+        });
+    });
+            </script>
+<div class="container">
+    <!-- Section 1: Cyber Attacks -->
+    
+    <div class="section">
+        <div class="section-icon"><i class="fa fa-bug"></i></div>
+        <a href="c1.html"> <h2  >Cyber Attacks</h2></a>
+        
+        <p>Learn about various types of cyber attacks like phishing, malware, DDoS, and more.</p>
+
+    </div>
+    
+    <!-- Section 2: Tools Information -->
+   
+    <div class="section">
+        <div class="section-icon"><i class="fa fa-wrench"></i></div> 
+        <a href="c2.html">  <h2    >Tools Information</h2></a>
+        <p>Get insights on cybersecurity tools like Wireshark, Metasploit, and Nmap.</p>
+    </div>
+    
+
+    <!-- Section 3: Prevention Tips -->
+    <div class="section">
+        <div class="section-icon"><i class="fa fa-shield"></i></div>
+       <a href="c3.html">  <h2 >Prevention Tips</h2></a>
+        <p>Discover essential tips to protect yourself from cyber threats and stay safe online.</p>
+    </div>
+    
+    
+    
+    <!-- Section 5: Incident Response & Recovery -->
+    <div class="section">
+        <div class="section-icon"><i class="fa fa-life-ring"></i></div>
+       <a href="c5.html"> <h2 >Incident Response & Recovery</h2></a>
+        <p>Learn what to do if you fall victim to a cyber attack, with guides on handling incidents and recovery.</p>
+    </div>
+
+    
+    <!-- Section 6: Security Best Practices for Businesses -->
+    <div class="section">
+        <div class="section-icon"><i class="fa fa-briefcase"></i></div>
+      <a href="c6.html"> <h2 >Security Best Practices for Businesses</h2></a>
+        <p>Explore cybersecurity practices tailored for businesses, including policy implementation and data protection.</p>
+    </div>
+
+
+</br>
+</br>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="widget">
+                    <h5 class="widgetheading">Our Contact</h5>
+                    <address>
+                        <strong>Target company Inc</strong><br>
+                        Sharda University, Knowledge Park 3<br>
+                        Pin-201306 Greater Noida, INDIA.
+                    </address>
+                    <p>
+                        <i class="fa fa-phone"></i> +91 86XXXXXXXX<br>
+                        <i class="fa fa-envelope"></i> email@domainname.com
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget">
+                    <h5 class="widgetheading">Quick Links</h5>
+                    <ul class="link-list">
+                        <li><a href="#">Latest Events</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget">
+                    <!-- You can add more content here if needed -->
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget">
+                    <!-- You can add more content here if needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="copyright">
+                        <p>&copy; Target 2024 All rights reserved.</p>
+                        <a href="#" title="Instagram">
+                            <i class="fa fa-instagram"></i></a>&nbsp&nbsp
+                        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>&nbsp&nbsp
+                        <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>&nbsp&nbsp
+                        <a href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a>&nbsp&nbsp
+                    
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <div>
+      </div>
+</footer>
+
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+<!-- Scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/portfolio/jquery.quicksand.js"></script>
+<script src="js/portfolio/setting.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/owl-carousel/owl.carousel.js"></script>
+</body>
+</html>

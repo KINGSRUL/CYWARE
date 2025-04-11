@@ -1,0 +1,86 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #111010;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #700303;
+    color: #fdfafa;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  /* Section styling */
+  section {
+    background-color: #0c0c0c;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(250, 247, 247, 0.1);
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    color: #fdfcfc;
+    margin-bottom: 0.5rem;
+  }
+  
+  section p {
+    font-size: 1rem;
+    color: #fefdfd;
+    line-height: 1.5;
+  }
+  
+  /* Add space between paragraphs */
+  section p + p {
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+    }
+  
+    section p {
+      font-size: 0.9rem;
+    }
+  }
+  

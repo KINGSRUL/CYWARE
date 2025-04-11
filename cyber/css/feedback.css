@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, label {
+    color: #00ffe7;
+}
+
+/* Container */
+.container {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: auto;
+    background-color: #1a1a1a;
+    border: 1px solid #00ffe733;
+    box-shadow: 0 0 15px #00ffe744;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+/* Form Elements */
+.form-group label {
+    font-weight: bold;
+    color: #00ffe7;
+}
+
+.form-control {
+    background-color: #101010;
+    border: 1px solid #00ffe755;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    border-color: #00ffe7;
+    outline: none;
+    box-shadow: 0 0 8px #00ffe799;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #00ffe7;
+    color: #0f0f0f;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00bfa5;
+    color: #000;
+}
+
+/* Star Rating */
+.rating-stars {
+    margin: 20px 0;
+}
+
+.rating-stars .fa-star {
+    font-size: 2.2em;
+    color: #444;
+    transition: color 0.3s;
+}
+
+.rating-stars .highlight {
+    color: rgb(232, 205, 53);
+}
+
+/* Footer */
+footer {
+    background-color: #0b0b0b;
+    color: #aaa;
+    padding: 40px 0 0;
+    margin-top: 60px;
+}
+
+footer .widgetheading {
+    color: #00ffe7;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #00ffe7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00bfa5;
+}
+
+#sub-footer {
+    background-color: #080808;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.social-network li a {
+    color: #00ffe7;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.social-network li a:hover {
+    color: #00bfa5;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+
+    .rating-stars .fa-star {
+        font-size: 1.8em;
+    }
+}
